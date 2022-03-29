@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "Red Hat";
+    src: url("../fonts/Red_Hat_Mono/RedHatMono-Regular.ttf");
+}
+
+/* selecteur de tag classique */
+
+html{
+    font-family: 'Roboto', sans-serif;
+    color:rgb(204, 204, 204);
+}
+
+body{
+    font-size: 20px;
+    width: 500px;
+    border:1px solid grey;
+    background-color: #223e4b;
+}
+
+header{
+
+}
+
+
+nav ul{
+
+}
+
+
+nav ul li a{
+    
+}
+
+h1{
+    font-size: 2rem;
+    font-weight:lighter;
+    text-transform: uppercase;
+}
+
+/* fin */
+
+
+
+section{
+
+}
+
+section h2{
+
+}
+
+section h3.subTitleArticle3{
+    text-align: center;
+}
+
+section > article{ /* Selectionne toutes les balises article directement enfant de section ! */
+    height:300px;
+    border: 2px solid red;
+  overflow: scroll;
+}
+
+article p{
+    text-align: justify;
+}
+
+aside a{
+    font-family: "Red Hat";
+    font-style:italic;
+}
+
+
+footer#footerOnTheWay{
+
+}
