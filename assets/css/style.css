@@ -116,13 +116,30 @@ section h2{
 
 section h3.subTitleArticle3{
     text-align: center;
+    padding-bottom:10px;
+    padding-top:10px;
+    text-decoration: underline;
 }
 
 section > article{ /* Selectionne toutes les balises article directement enfant de section ! */
+    border-bottom:2px solid #be3e2b;
 }
 
+section:last-of-type{
+    margin-top:30px;
+}
+
+aside{
+    float:left;
+    width: 50%;
+    border: 1px solid grey;
+    padding: 10px;
+    margin-bottom:15px;
+}
 article p{
     text-align: justify;
+    padding: 10px;
+    line-height: 1.1rem;
 }
 
 aside a{
@@ -130,19 +147,54 @@ aside a{
     font-style:italic;
 }
 
-
-footer#footerOnTheWay{
-
+/*
+footer#footerOnTheWay ul li:first-child a{
+    color:chartreuse;
 }
+
+footer#footerOnTheWay ul li:last-child a{
+    color:chartreuse;
+}
+
+footer#footerOnTheWay ul li:nth-child(3) a{
+    color:chartreuse;
+}
+
+footer#footerOnTheWay ul li:only-child a{
+    color:chartreuse;
+}*/
+/*
+footer#footerOnTheWay ul li:nth-child(odd) a{
+    color:#be3e2b;
+}
+
+footer#footerOnTheWay ul li:nth-child(even) a{
+    color:#ac675d;
+}*/
 /*
 #footerOnTheWay form input:focus{
     border:5px solid #ed8a45;
 }*/
 
+footer#footerOnTheWay ul{
+    margin-bottom:15px;
+    clear: both;
+    height: 30px;
+    line-height: 30px;
+}
+
+footer#footerOnTheWay li{
+    float: left;
+    width:20%;
+    text-align: center;
+}
 footer#footerOnTheWay ul li a{
     color:#99aebe;
 }
+footer#footerOnTheWay form{
+    clear: both;
+}
 
-#footerOnTheWay form button:active{
+footer#footerOnTheWay form button:active{
     background-color: #be3e2b;
 }
