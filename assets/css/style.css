@@ -8,24 +8,52 @@
 html{
     font-family: 'Roboto', sans-serif;
     color:rgb(204, 204, 204);
+    font-size: 16px;
 }
 
 body{
-    font-size: 20px;
-    width: 500px;
-    border:1px solid grey;
+    
     background-color: #223e4b;
+    width:100%;
 }
 
 header{
+    height:150px;
+    width:100%;
+    padding:15px;
+}
 
+header > img{
+    max-height: 50%;
+    text-align: center;
+    width: auto;
+    margin: auto;
+}
+
+nav{
+    
 }
 
 
-nav ul{
-
+nav div{
+    margin-top:15px;
+    float: left;
+    width: 100%;
 }
 
+nav div ul{
+    
+}
+
+nav div > ul li{
+    border:1px solid grey;
+    width:25%;
+    float:left;
+    font-size: 0.7rem;
+    text-align: center;
+    height:30px;
+    line-height: 30px;
+}
 
 nav ul li a{
     
@@ -54,9 +82,6 @@ section h3.subTitleArticle3{
 }
 
 section > article{ /* Selectionne toutes les balises article directement enfant de section ! */
-    height:300px;
-    border: 2px solid red;
-  overflow: scroll;
 }
 
 article p{
