@@ -52,16 +52,41 @@ nav div > ul li{
     text-align: center;
     height:30px;
     line-height: 30px;
+    /*box-shadow: 8px 8px 8px white;*/
+
+}
+
+nav div > ul li:hover{
+    background-color: #99aebe;
 }
 
 nav ul li a{
-    color:#99aebe
+    color:#99aebe;
+    /*text-shadow:1px 2px 2px #ffffff3b;*/
 }
+
+
+nav ul li:hover a{
+    color:#223e4b;
+}
+
+nav ul li a:active{
+    color:#be3e2b;
+}
+
+nav ul li a:visited{
+    color:#be3e2b;
+}
+
+
 
 
 .mainTitle{
     background-color: #be3e2b;
+    border:1px solid #811403;
+    /* box-shadow:1px 2px 8px #811403; */
     padding:10px;
+    /* border-radius: 15px; */
 }
 
 .mainTitle h1{
@@ -108,4 +133,16 @@ aside a{
 
 footer#footerOnTheWay{
 
+}
+/*
+#footerOnTheWay form input:focus{
+    border:5px solid #ed8a45;
+}*/
+
+footer#footerOnTheWay ul li a{
+    color:#99aebe;
+}
+
+#footerOnTheWay form button:active{
+    background-color: #be3e2b;
 }
