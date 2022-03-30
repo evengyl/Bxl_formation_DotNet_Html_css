@@ -18,20 +18,19 @@ body{
 }
 
 header{
-    height:150px;
+    height:120px;
     width:100%;
     padding:15px;
 }
 
 header > img{
     max-height: 50%;
-    text-align: center;
-    width: auto;
+    display: block;
     margin: auto;
 }
 
 nav{
-    
+    margin:0 -10px 0 -10px; /* T R B L */
 }
 
 
@@ -46,23 +45,30 @@ nav div ul{
 }
 
 nav div > ul li{
-    border:1px solid grey;
+    border:1px solid #99aebe;
     width:25%;
     float:left;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     text-align: center;
     height:30px;
     line-height: 30px;
 }
 
 nav ul li a{
-    
+    color:#99aebe
 }
 
-h1{
-    font-size: 2rem;
+
+.mainTitle{
+    background-color: #be3e2b;
+    padding:10px;
+}
+
+.mainTitle h1{
+    font-size: 1.5rem;
     font-weight:lighter;
     text-transform: uppercase;
+    text-align: center;
 }
 
 /* fin */
@@ -74,7 +80,13 @@ section{
 }
 
 section h2{
-
+    font-size: 1.15rem;
+    font-weight:lighter;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom:1px solid #99aebe;
+    padding-bottom:10px;
+    padding-top:10px;
 }
 
 section h3.subTitleArticle3{
