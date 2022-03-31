@@ -23,7 +23,7 @@ header{
     padding:15px;
 }
 
-header > img{
+header > a > img{
     max-height: 50%;
     display: block;
     margin: auto;
