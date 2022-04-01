@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="../assets//css/reset.css">
         <link rel="stylesheet" href="../assets/css/general.css">
         <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/media.css">
+
     </head>
     <body>
 
@@ -20,10 +22,10 @@
             <nav>
                 <div class="nav1">
                     <ul>
-                        <li><a href="#72772" title="Moon to Mars">Moon to Mars</a></li>
+                        <li><a href="moonToMars.html" title="Moon to Mars">Moon to Mars</a></li>
                         <li><a href="#2751" title="Earth">Earth</a></li>
                         <li><a href="#3782757" title="Space Tech">Space Tech</a></li>
-                        <li><a href="#75245" title="Galleries">Galleries</a></li>
+                        <li><a href="galleries.html" title="Galleries">Galleries</a></li>
                     </ul>
                 </div>
             </nav>
@@ -34,11 +36,29 @@
             <h1>Contact</h1>
         </div>
 
-        <section>
+        <section class="contactForm">
             <form action="/views/contact.html" method="post">
+
+                <label for="firstName">Prénom : </label>
+                <input type="text" id="firstName" name="firstName" minlength="2" required>
+
+                <label for="lastName">Nom de famille : </label>
+                <input type="text" id="lastName" name="lastName">
+
+                <label for="email">Adresse Mail : </label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Mot de passe : </label>
+                <input type="password" id="password" name="password" required minlength="6" maxlength="15">
+
+                <button type="submit">Envoyer</button>
+                <button type="reset">Vider</button>
+
+
+                <!--EXEMPLE !!!!!, pour plus d'infos rdv dans la doc-->
 <!-- 
-                <label>Switch</label><input name="console" value="Switch" type="checkbox"><br>
-                <label>PS4</label><input name="console" value="Ps4" type="checkbox"><br>
+                <label for="switch">Switch</label><input id="switch" name="console" value="Switch" type="checkbox"><br>
+                <label>PS4</label><input checked name="console" value="Ps4" type="checkbox"><br>
                 <label>PS5</label><input name="console" value="Ps5" type="checkbox"><br>
                 <label>Xbox</label><input name="console" value="Xbox" type="checkbox"><br>
                  
@@ -49,15 +69,72 @@
                 <label>14 ans</label><input name="age" value="14" type="radio"><br>
                 <label>16 ans</label><input name="age" value="16" type="radio"><br>
                 <label>18 ans</label><input name="age" value="18" type="radio"><br>
--->
-                
+
+           -->     <!--Attention, c'est annuler dans le reset.css-->
+<!--            
+                <fieldset> 
+                    <legend>Mes Supers selecteurs</legend>
+                    
+                    <select name="select">
+                        <option value="ie">Internet Explorer</option>
+                        <option value="ff">Firefox</option>
+                        <option selected value="gc">Google Chrome</option>
+                        <option value="o">Opera</option>
+                        <option value="s">Safari</option>
+                    </select>
+
+                    <br><br><br>
+
+                    <select multiple name="select">
+                        <option value="ie">Internet Explorer</option>
+                        <option value="ff">Firefox</option>
+                        <option value="gc">Google Chrome</option>
+                        <option value="o">Opera</option>
+                        <option value="s">Safari</option>
+                    </select>
+
+                    <br><br><br>
+
+                    <select name="select">
+                        <optgroup label="Les TOP">
+                            <option selected value="gc">Google Chrome</option>
+                            <option value="s">Safari</option>
+                            <option value="e">Edge</option>
+                            <option value="b">Brave</option>
+                        </optgroup>
+                        <optgroup label="les Nazes">
+                            <option value="ie">Internet Explorer</option>
+                            <option value="ff">Firefox</option>
+                            <option value="o">Opera</option>
+                            <option value="v">Vivaldi</option>
+                        </optgroup>
+                    </select>
+                </fieldset> -->
+<!-- 
+                <input name="navigateur" value="TUTU" placeholder="Choix du navigateur" list="browsers">
+
+                <datalist id="browsers">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Google Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist> -->
 
 
-                <br><br><br>
+                <!-- <input required maxlength="15" minlength="2" type="text" name="lastname"> -->
 
+                <!-- <input readonly type="number" value="1991" name="number" > -->
+
+                <!-- <input type="text" name="inputmode" inputmode="numeric"> Permet de choisir le type de clavier sur smartphone a utiliser pour ce champ : https://developer.mozilla.org/fr/docs/Web/HTML/Global_attributes/inputmode--> 
 
                 <!-- <input name="color" type="color"><br><br><br> -->
 
+
+                <!-- <input type="url" value="http://" required name="url"> -->
+
+                <!-- <label for="date">Date : </label><input id="date" type="date" name="date" step="10"> -->
+<!-- 
                 <input type="date"><br><br><br>
                 <button>Envoyer</button>
                 <input type="datetime-local"><br><br><br>
@@ -77,9 +154,13 @@
                 <input type="text"> (default value)<br><br><br>
                 <input type="time"><br><br><br>
                 <input type="url"><br><br><br>
-                <input type="week"><br><br><br>
+                <input type="week"><br><br><br> -->
 
-                <button>Envoyer</button> -->
+
+
+                <!-- <textarea autofocus spellcheck="false" name="textarera" rows="10" cols="30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, illo. Et vero magni, obcaecati voluptas amet dicta quas tempora natus.</textarea> -->
+
+                <!-- <button>Envoyer</button> -->
                 <!-- <input type="submit" value="Envoyer other"> -->
             </form>
 

@@ -1,0 +1,25 @@
+/*
+<576px	X-Small
+≥576px	Small
+≥768px	Medium
+≥992px	Large
+≥1200px	X-Large
+≥1400px XX-Large
+*/
+
+
+/* smartphone */
+@media (max-width:576px){ 
+}
+
+/*smart landscape & tablet */
+@media (min-width:577px) and (max-width:768px){
+}
+
+/* tablet landscape & small pc */
+@media (min-width:769px) and (max-width:992px){
+}
+
+/* other, pc, tv, giant screen */
+@media (min-width:993px){
+}

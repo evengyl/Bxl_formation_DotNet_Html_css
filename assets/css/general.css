@@ -36,3 +36,16 @@ section article h3:last-of-type
     color:chartreuse;
 }
 */
+/*
+input:valid{
+    border:3px solid green;
+}
+
+input:invalid{
+    border:3px solid red;
+}
+
+
+textarea{
+    resize: none;
+}*/

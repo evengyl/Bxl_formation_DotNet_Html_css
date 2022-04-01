@@ -147,6 +147,89 @@ aside a{
     font-style:italic;
 }
 
+
+
+section.contactForm form label{
+    margin-left:10px;
+}
+
+
+section.contactForm form input{
+    width:60%;
+    display: block;
+    margin-bottom:15px;
+    margin-top:5px;
+    margin-left:10px;
+}
+
+
+section.contactForm form input:focus{
+    outline:none;
+}
+
+
+section.contactForm form input:valid{
+    border:none;
+    border:2px solid green;
+    box-shadow:2px 1px 4px rgba(0, 128, 0, 0.467);
+}
+
+section.contactForm form input:invalid{
+    border:none;
+    border:2px solid red;
+    box-shadow:2px 1px 4px rgba(255, 0, 0, 0.526);
+}
+
+section.contactForm form input:optional{
+    border:none;
+}
+
+
+
+
+section.contactForm form button{
+    border-radius: 0;
+    border:none;
+    padding:7px;
+}
+
+
+section.dataTable table{
+    background-color: #be3e2b;
+    border:1px solid #811403;
+    width:100%;
+}
+
+section.dataTable table tr th {
+    background-color: #811403;
+}
+
+section.dataTable table tr td, section.dataTable table tr th{
+    border:1px solid black;
+    padding:5px;
+
+}
+
+section.dataTable table tbody td:first-child{
+    width:20px;
+}
+
+section.layoutTable table.mainContent{
+    width:100%;
+    height:360px;
+}
+
+section.layoutTable table.mainContent tr td{
+    border:1px solid white;
+    width:20%;
+    height:20%;
+}
+
+
+section.layoutTable table.centerContent{
+    width:100%;
+    height:100%;
+}
 /*
 footer#footerOnTheWay ul li:first-child a{
     color:chartreuse;
@@ -198,3 +281,16 @@ footer#footerOnTheWay form{
 footer#footerOnTheWay form button:active{
     background-color: #be3e2b;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
